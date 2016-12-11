@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+<body>
+<div class="banner" id="bannerOne">
+    <!--图片区-->
+    <div class="bannerInner"></div>
+    <!--tab区-->
+    <ul class="bannerTip"></ul>
+    <!--btn区-->
+    <a href="javascript:;" class="btnLeft"></a>
+    <a href="javascript:;" class="btnRight"></a>
+</div>
+<div class="banner" id="bannerTwo">
+    <!--图片区-->
+    <div class="bannerInner"></div>
+    <!--tab区-->
+    <ul class="bannerTip"></ul>
+    <!--btn区-->
+    <a href="javascript:;" class="btnLeft"></a>
+    <a href="javascript:;" class="btnRight"></a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+<script>
+    $('#bannerOne').banner('json/data.json',2000);
+    $('#bannerTwo').banner('json/data.json');
+</script>
+</body>
+</html>
